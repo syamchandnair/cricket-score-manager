@@ -201,7 +201,7 @@ function checkOverCompletion() {
 
 function startNextInnings() {
   if (confirm("Start Next Innings?")) {
-    targetScore = runs;
+    targetScore = runs + 1;
     targetInput.value = targetScore;
     resetCommonState();
   }
@@ -300,3 +300,4 @@ function loadFromLocalStorage() {
 // Initialize
 loadFromLocalStorage();
 updateDisplay();
+
